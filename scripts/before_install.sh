@@ -13,3 +13,8 @@ else
   echo "Creating ${DIR} directory"
   mkdir ${DIR}
 fi
+
+echo "Stopping any existing node servers"
+# pkill node
+npm stop
+# systemctl restart npm
