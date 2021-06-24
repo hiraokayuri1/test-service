@@ -16,4 +16,4 @@ npm install
 
 #start our node app in the background
 node dist/bundle.js
-# echo finished
+echo finished
