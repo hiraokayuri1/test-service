@@ -1,5 +1,6 @@
 #!/bin/bash
-#Stopping existing node servers
+
+systemctl restart nginx
 echo "Stopping any existing node servers"
 # pkill node
 npm stop
