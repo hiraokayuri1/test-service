@@ -27,6 +27,6 @@ artifacts:
   files:
     - dist/bundle.js
     - package.json
-    - node_modules/**/*
-    - appspec.yml
-    - scripts/**/*
+    # - node_modules/**/*
+    # - appspec.yml
+    # - scripts/**/*
