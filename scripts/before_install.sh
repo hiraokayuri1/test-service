@@ -14,7 +14,7 @@ else
   mkdir ${DIR}
 fi
 
-echo "Stopping any existing node servers"
+# echo "Stopping any existing node servers"
 # pkill node
-npm stop
+
 # systemctl restart npm
