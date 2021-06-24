@@ -2,9 +2,9 @@ version: 0.2
 
 version: 0.2
 phases:
-  pre_build:
-    commands:
-      #installs dependencies into the node_modules/ directory
+  install:
+   commands:
+      - echo "install > commands"
       - npm install
   build:
     commands:
