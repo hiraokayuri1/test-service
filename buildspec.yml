@@ -1,26 +1,20 @@
 version: 0.2
 
+version: 0.2
 phases:
-  install:
-    commands:
-      - echo "install > commands"
-    finally:
-      - echo "install > finally"
   pre_build:
     commands:
-      - echo "pre_build > commands"
-    finally:
-      - echo "pre_build > finally"
+      #installs dependencies into the node_modules/ directory
+      - npm install
   build:
     commands:
-      - echo "build > commands"
-    finally:
-      - echo "build > finally"
+      - echo Build started on `date`
+      - echo Compiling
+      - npm run build
   post_build:
     commands:
-      - echo "post_build > commands"
-    finally:
-      - echo "post_build > finally"
+      - echo Build completed on `date`
+# Include only the files required for your application to run.
 artifacts:
   files:
     - dist/**/*
