@@ -4,7 +4,6 @@ phases:
   install:
     commands:
       - echo "install > commands"
-      - npm install
     finally:
       - echo "install > finally"
   pre_build:
@@ -15,7 +14,6 @@ phases:
   build:
     commands:
       - echo "build > commands"
-      - npm run build:prod
     finally:
       - echo "build > finally"
   post_build:
@@ -25,8 +23,8 @@ phases:
       - echo "post_build > finally"
 artifacts:
   files:
-    - dist/bundle.js
+    - dist/**/*
     - package.json
-    # - node_modules/**/*
+    - node_modules/**/*
     # - appspec.yml
     # - scripts/**/*
