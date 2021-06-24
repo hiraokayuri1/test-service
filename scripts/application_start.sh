@@ -3,8 +3,6 @@
 #give permission for everything in the express-app directory
 sudo chmod -R 777 /home/ec2-user/test-service
 
-#navigate into our working directory where we have all our github files
-# cd /home/ec2-user/test-service
 
 #add npm and node to path
 # export NVM_DIR="$HOME/.nvm"
