@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noResolve": false,
+    "removeComments": false,
+    "sourceMap": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "keyofStringsOnly": true,
+    "baseUrl": "./",
+    "paths": {
+      "~application/*": ["src/application/*"],
+      "~domain/*": ["src/domain/*"],
+      "~factory/*": ["src/factory/*"],
+      "~infrastructure/*": ["src/infrastructure/*"],
+      "~src/*": ["src/*"]
+    },
+    "lib": ["es6", "dom", "es2015"],
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "outDir": "dist"
+  },
+  "typeRoots": ["node_modules/@types", "src/@types"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "./node_modules/**/*"
+  ]
+}
