@@ -15,8 +15,8 @@ phases:
 # Include only the files required for your application to run.
   artifacts:
     files:
-     - dist/bundle.js
-     - package.json
-     - node_modules/**/*
+      - dist/bundle.js
+      - package.json
+      - node_modules/**/*
     #  - appspec.yml
     #  - scripts/**/*
