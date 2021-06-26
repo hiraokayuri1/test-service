@@ -1,0 +1,24 @@
+node:events:353
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8080
+    at Server.setupListenHandle [as _listen2] (node:net:1290:16)
+    at listenInCluster (node:net:1338:12)
+    at Server.listen (node:net:1424:7)
+    at eval (webpack-internal:///465:10:8)
+    at Object.465 (/Users/yuri_hiraoka/test-service/dist/bundle.js:1:5042)
+    at __webpack_require__ (/Users/yuri_hiraoka/test-service/dist/bundle.js:1:19715)
+    at /Users/yuri_hiraoka/test-service/dist/bundle.js:1:19797
+    at Object.<anonymous> (/Users/yuri_hiraoka/test-service/dist/bundle.js:1:19823)
+    at Module._compile (node:internal/modules/cjs/loader:1102:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1131:10)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1317:8)
+    at processTicksAndRejections (node:internal/process/task_queues:80:21) {
+  code: 'EADDRINUSE',
+  errno: -48,
+  syscall: 'listen',
+  address: '::',
+  port: 8080
+}
