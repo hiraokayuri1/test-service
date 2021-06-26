@@ -7,5 +7,5 @@ echo hello
 ls
 
 #start our node app in the background
-nohup node dist/bundle.js
+# nohup node dist/bundle.js
 echo finished
